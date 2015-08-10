@@ -1,0 +1,49 @@
+*{margin:0;padding:0}
+body{font-family:"Microsoft YaHei"}
+img,button,input{border:none}
+button{cursor:pointer}
+a{text-decoration:none}
+ul li{list-style:none}
+::selection{color:#fff;background:#47bea0}
+@font-face{font-family:'icomoon';src:url('../../fonts/icomoon.eot?wkmwtl');src:url('../../fonts/icomoon.eot?#iefixwkmwtl') format('embedded-opentype'),url('../../fonts/icomoon.woff?wkmwtl') format('woff'),url('../../fonts/icomoon.ttf?wkmwtl') format('truetype'),url('../../fonts/icomoon.svg?wkmwtl#icomoon') format('svg');font-weight:normal;font-style:normal}.icon{font-family:'icomoon';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.icon-home3:before{content:"\e902"}
+.icon-newspaper:before{content:"\e904"}
+.icon-profile:before{content:"\e923"}
+.icon-address-book:before{content:"\e944"}
+.icon-display:before{content:"\e956"}
+.icon-bubble:before{content:"\e96b"}
+.icon-users:before{content:"\e972"}
+.icon-search:before{content:"\e986"}
+.icon-leaf:before{content:"\e9a4"}
+.icon-cross:before{content:"\ea0f"}
+.clearfix{*zoom:1}.clearfix:after{content:"";clear:both;height:0;display:block;visibility:hidden}
+.header{width:100%;height:70px;background-color:#353942}
+.logo{width:200px;display:inline-block;*display:inline;*zoom:1;background-color:#2a2d34}.logo img{width:150px;height:40px;margin:15px 25px}
+.user{float:right;display:inline;height:40px;line-height:40px;position:relative;margin:15px 20px;text-align:center}.user:hover ul{display:block;z-index:99;display:absolute;z-index:10}
+.user ul{display:none}
+.user a{width:110px;display:inline-block;*display:inline;*zoom:1;background-color:#47bea0;color:#fff}
+b{display:inline-block;*display:inline;*zoom:1;width:0;height:0;border-style:dashed;border-color:#fff transparent transparent transparent;border-width:5px}
+.aside{float:left;display:inline;width:200px;margin-left:-100%;word-spacing:3px;letter-spacing:2px;background-color:#353942}
+.menu{height:50px;line-height:50px;padding-left:30px;color:#595d69}
+.list{display:inline-block;*display:inline;*zoom:1;width:170px;padding-left:30px}.list a{height:40px;line-height:40px;color:#cbcfd8}.list a:hover{color:#fff}
+.main-wrap{margin-left:200px;background-color:#e8edf1}
+.main{width:100%;float:left;display:inline}.main a{color:#47bea0}.main a:hover{color:#e8614b}
+.main .add{color:#fff}.main .add:hover{color:#fff}
+.title{height:60px;line-height:60px;font-size:1.1em;font-weight:700;background-color:#fff;color:#2a2d34;border-bottom:1px solid #47bea0}.title span{display:inline-block;*display:inline;*zoom:1;width:110px;height:57px;border-bottom:3px solid #47bea0;text-align:center}
+table{width:100%;float:right;margin:20px;text-align:center;border-radius:10px;border:1px solid #dce1e5}
+tr{width:100%;height:30px}
+th{background-color:#eef3f7;color:#919699}
+td{color:#353942}
+.add{float:right;display:inline;display:inline-block;*display:inline;*zoom:1;width:110px;height:30px;line-height:30px;font-size:1em;text-align:center;margin:20px 20px 0 0;background-color:#e8614b}
+.page{position:absolute;bottom:40px;right:100px;color:#919699}.page a{color:#e8614b}.page a:hover{color:#47bea0}
+.pop-level{position:absolute;bottom:0;right:0;width:100%;height:100%;background:rgba(0,0,0,0.3);display:none}.pop-level form{width:310px;position:absolute;top:20%;left:50%;margin-left:-155px;padding:20px;background-color:#f5f9fc}
+.pop-level input,.pop-level button,.pop-level textarea{width:100%;height:40px;border-radius:5px;margin-top:20px;letter-spacing:1px}
+.pop-level textarea{resize:none;width:100%;height:100px}
+.pop-level button{font-size:1em;font-weight:700;background-color:#e8614b;color:#fff}
+.pop-tit{height:50px;line-height:50px;font-weight:700;position:relative;text-align:center;border-radius:5px;border-bottom:1px solid #dce1e5;color:#919699}.pop-tit .del-pop{color:#919699}
+.pop-tit .icon-cross{position:absolute;top:0;right:0;color:#47bea0}.pop-tit .icon-cross:hover{color:#e8614b}
+.del-pop{position:absolute;top:0;right:0}
+.odd{background-color:#fff}
+.even{background-color:#f2f7fa}
+.wrong{font-size:12px;color:#e8614b}
+fieldset{margin:20px;padding:20px}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>后台管理</title>
+    <link rel="stylesheet" href="../../Public/css/admin/admin.css">
+    <script type="text/javascript" src="../../Public/js/jquery.1.4.2-min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="../../Public/images/logos.png" alt="Logo" width="120px" heigth="70px"></div>
+        <div class="user">
+            <a href="#" id="user">
+                admin <b></b>
+            </a>
+            <ul>
+                <li>
+                    <a href="#" id="ad-mod-pwd" class="pop-cancle">修改密码</a>
+                </li>
+                <li>
+                    <a href="#" id="log-out" class="pop-cancle">退出登录</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content clearfix">
+        <div class="main">
+            <div class="main-wrap" id="mainWrap">
+                <div class="main">
+                    <div class="title">
+                        <span>账号管理</span>
+                    </div>
+                    <a href="#" class="add pop-cancle" id="add-user">添加账号</a>
+                    <table class="tableDetail">
+                        <tr>
+                            <th>用户id</th>
+                            <th>用户名</th>
+                            <th>用户级别</th>
+                            <th>删除</th>
+                            <th>重置密码</th>
+                        </tr>
+                        <tr>
+                            <td>工作室id</td>
+                            <td>李锡祚工作室</td>
+                            <td>管理员</td>
+                            <td>
+                                <a href="#" class="user-del icon icon-cross pop-cancle"></a>
+                            </td>
+                            <td>
+                                <a href="#" class="re-pw icon icon-bubble pop-cancle"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>工作室id</td>
+                            <td>李锡祚工作室</td>
+                            <td>管理员</td>
+                            <td>
+                                <a href="#" class="user-del icon icon-cross pop-cancle"></a>
+                            </td>
+                            <td>
+                                <a href="#" class="re-pw icon icon-bubble pop-cancle"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>工作室id</td>
+                            <td>李锡祚工作室</td>
+                            <td>管理员</td>
+                            <td>
+                                <a href="#" class="user-del icon icon-cross pop-cancle"></a>
+                            </td>
+                            <td>
+                                <a href="#" class="re-pw icon icon-bubble pop-cancle"></a>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="page">
+                        <a href="#">首页</a>
+                        当前第3页/共10页
+                        <a href="#">下一页</a>
+                        <a href="#">尾页</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aside" id="aside">
+            <ul>
+                <li class="menu">菜单</li>
+                <li class="list">
+                    <a href="index.html"> <i class="icon icon-home3"></i>
+                        后台首页
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="./audit.html"> <i class="icon icon-profile"></i>
+                        工作室审核
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="class.html">
+                        <i class="icon icon-users"></i>
+                        班级管理
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="user.html">
+                        <i class="icon icon-address-book"></i>
+                        账号管理
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="notice.html">
+                        <i class="icon icon-bubble"></i>
+                        公告管理
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="feedback.html">
+                        <i class="icon icon-display"></i>
+                        查看反馈
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pop-level" id="show-add-user">
+        <form action="" method="post" name="adduserFrm">
+            <div class="pop-tit">
+                添加账号
+                <a href="#" class="pop-cancle icon icon-cross"></a>
+            </div>
+            <input type="text" name="userName" id="userName" placeholder="账号">
+            <input type="password" name="password1" id="password1" placeholder="密码">
+            <input type="password" name="password2" id="password2" placeholder="确认密码">
+            <button class="sure" id="adduserFrm">添加</button>
+        </form>
+    </div>
+    <div class="pop-level" id="show-ad-pwd">
+        <form action="" method="post" name="modpsdFrm">
+            <div class="pop-tit">
+                修改密码
+                <a href="#" class="pop-cancle icon icon-cross"></a>
+            </div>
+            <input type="password" name="user-pw1" id="user-pw1" placeholder="密码">
+            <input type="password" name="user-pw2" id="user-pw2" placeholder="确认密码">
+            <button class="sure" id="modpsdFrm">确认</button>
+        </form>
+    </div>
+    <div class="pop-level" id="show-lg-out">
+        <form action="" method="post" name="logout">
+            <div class="pop-tit">
+                确认退出？
+                <a href="#" class="pop-cancle icon icon-cross"></a>
+            </div>
+            <button class="sure">确认</button>
+            <button class="cancle">取消</button>
+        </form>
+    </div>
+    <div class="pop-level" id="show-user-del">
+        <form action="" method="post" name="deluserFrm">
+            <div class="pop-tit">
+                确认删除？
+                <a href="#" class="pop-cancle icon icon-cross"></a>
+            </div>
+            <button class="sure" id="deluserFrm">确认</button>
+            <button class="cancle">取消</button>
+        </form>
+    </div>
+    <div class="pop-level" id="show-re-pw">
+        <form action="" name="repwdFrm">
+            <div class="pop-tit">重置成功！</div>
+        </form>
+    </div>  
+    <script type="text/javascript" src="../../Public/js/util.js"></script>
+    <script type="text/javascript" src="../../Public/js/main.js"></script>
+    <script>
+        var work = new Workroom();
+    </script>
+</body>
+</html>

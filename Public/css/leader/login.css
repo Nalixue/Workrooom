@@ -1,0 +1,33 @@
+@charset "utf-8";
+*{margin:0;padding:0}
+body{background:#7191a8;color:#fff;font-family:"Microsoft YaHei"}
+img,button,input{border:none}
+::selection{color:#fff;background:#4ad8bf}
+@font-face{font-family:'icomoon';src:url('__PUBLIC__/leader/fonts/icomoon.eot?wkmwtl');src:url('_PUBLIC__/leader/fonts/icomoon.eot?#iefixwkmwtl') format('embedded-opentype'),url('_PUBLIC__/leader/fonts/icomoon.woff?wkmwtl') format('woff'),url('_PUBLIC__/leader/fonts/icomoon.ttf?wkmwtl') format('truetype'),url('_PUBLIC__/leader/fonts/icomoon.svg?wkmwtl#icomoon') format('svg');font-weight:normal;font-style:normal}.icon{font-family:'icomoon';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.icon-key-fill:before{content:"\e600"}
+.icon-home3:before{content:"\e902"}
+.icon-newspaper:before{content:"\e904"}
+.icon-book:before:before{content:"\e91f"}
+.icon-library:before:before{content:"\e921"}
+.icon-profile:before:before{content:"\e923"}
+.icon-files-empty:before:before{content:"\e925"}
+.icon-stack:before:before{content:"\e92e"}
+.icon-address-book:before:before{content:"\e944"}
+.icon-display:before:before{content:"\e956"}
+.icon-bubble:before:before{content:"\e96b"}
+.icon-users:before:before{content:"\e972"}
+.icon-user-plus:before:before{content:"\e973"}
+.icon-search:before:before{content:"\e986"}
+.icon-leaf:before:before{content:"\e9a4"}
+.icon-download2:before:before{content:"\e9c5"}
+.icon-upload2:before:before{content:"\e9c6"}
+.icon-link:before:before{content:"\e9cb"}
+.icon-plus:before:before{content:"\ea0a"}
+.icon-cross:before:before{content:"\ea0f"}
+.icon-github2:before:before{content:"\eab2"}
+i{float:rigth;display:inline;margin-right:8px}
+.login{position:absolute;top:50%;left:50%;width:350px;height:476px;margin-left:-175px;margin-top:-238px;text-align:center}.login img{width:170px;height:44px;margin-left:70px;cursor:pointer}
+.login p span{font-size:1em;color:#f74043}
+.lg_input{width:350px;font-size:1.2em;margin:20px auto 10px auto;padding:60px 0 20px 0;background-color:#fff}.lg_input p{width:300px;height:50px;line-height:50px;margin:0 auto 25px auto;color:#747474}
+.lg_input input{width:200px;height:35px;padding-left:5px;background-color:#f9ffbd;outline:1px solid #e5e8ce}
+.lg_input button{width:100px;height:40px;font-size:1em;float:right;display:inline;margin:10px 8px auto auto;background-color:#7191a8;color:#fff;cursor:pointer}

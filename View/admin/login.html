@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>后台管理</title>
+    <link rel="stylesheet" href="../../Public/css/admin/login.css">
+    <script type="text/javascript" src="../../Public/js/jquery.1.4.2-min.js"></script>
+</head>
+<body>
+ <form action="" name="loginFrm" method="post">
+        <div class="login">
+            <h1>登陆</h1>
+            <div class="lg_input">
+                <p>
+                    <label for="name">用户名：</label>
+                    <input type="text" id="userName" name="userName" placeholder="请输入用户名">
+                </p>
+                <p>
+                    <label for="password">密&nbsp;&nbsp;&nbsp;码：</label>
+                    <input type="password" id="password" name="password" placeholder="请输入密码">
+                </p>
+                <p>
+                    <label for="code">验证码：</label>
+                    <input type="text" name="code" id="code" placeholder="请输入验证码">
+                </p>
+                <p>
+                    <img src="" alt="验证码" title="看不清换一张" id="checking" />
+                </p>
+                <p>
+                    <button id="login-btn">登陆</button>
+                </p>
+            </div>
+            <p class="lg_copyright">Copyright&copy;Parabola</p>
+        </div>
+    </form>
+<script type="text/javascript" src="../../Public/js/util.js"></script>
+<script type="text/javascript" src="../../Public/js/login.js"></script>
+<script>
+    var login = new Login();
+</script>
+</body>
+</html>
+

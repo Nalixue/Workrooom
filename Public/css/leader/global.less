@@ -1,0 +1,227 @@
+@import "variables";
+
+.reset() {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-family: "Microsoft YaHei";
+    }
+    img,
+    button,
+    input {
+        border: none;
+    }
+    button {
+        cursor: pointer;
+    }
+    a{
+        text-decoration: none;
+    }
+    ul li {
+        list-style: none;
+    }
+    ::selection {
+        color: @u-f;
+        background: @lg-f;
+    }
+}
+
+.clearfix() {
+    &:after {
+        content: "";
+        clear: both;
+        height: 0;
+        display: block;
+        visibility: hidden;
+    }
+    *zoom: 1;
+}
+.pos-middle(@w,@h) {
+    .box-size(@w, @h);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -@w / 2;
+    margin-top: -@h / 2;
+}
+.pos-h(@w, @t) {
+    .box-wid(@w);
+    position: absolute;
+    top: @t;
+    left: 50%;
+    margin-left: -@w / 2;
+}
+.pos-box(@t, @r) {
+    position: absolute;
+    bottom: @t;
+    right: @r;
+}
+.fl(@p: left) {
+    float: @p;
+    display: inline;
+}
+.d-ib() {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+.box-size(@w, @h) {
+    width: @w;
+    height: @h;
+}
+.box-wid(@w) {
+    width: @w;
+}
+.triangle-b(@w: 5px, @c:#fff) {
+    .d-ib();
+    .box-size(0, 0);
+    border-style: dashed;
+    border-color: @c transparent transparent transparent;
+    border-width: @w;
+}
+.font-middle(@h) {
+    height: @h;
+    line-height: @h;
+}
+.font-s(@s: 12px) {
+    font-size: @s;
+}
+.font-w(@wei) {
+    font-weight: @wei;
+}
+.b-c(@b, @f) {
+    background-color: @b;
+    color: @f;
+}
+.font() {
+    @font-face {
+        font-family: 'icomoon';
+        src:url('../../fonts/icomoon.eot?wkmwtl');
+        src:url('../../fonts/icomoon.eot?#iefixwkmwtl') format('embedded-opentype'),
+            url('../../fonts/icomoon.woff?wkmwtl') format('woff'),
+            url('../../fonts/icomoon.ttf?wkmwtl') format('truetype'),
+            url('../../fonts/icomoon.svg?wkmwtl#icomoon') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    .icon {
+        font-family: 'icomoon';
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+   /*  .icon-key-fill {
+       &:before {
+           content: "\e600";
+       }
+   } */
+    .icon-home3{
+        &:before {
+            content: "\e902";
+        }
+    }
+    .icon-newspaper{
+        &:before {
+            content: "\e904";
+        }
+    }
+   /*  .icon-book {
+       &:before {
+           content: "\e91f";
+       }
+   } */
+   /*  .icon-library {
+       &:before {
+           content: "\e921";
+       }
+   } */
+    .icon-profile {
+        &:before {
+            content: "\e923";
+        }
+    }
+   /*  .icon-files-empty {
+       &:before {
+           content: "\e925";
+       }
+   } */
+   /*  .icon-stack {
+       &:before {
+           content: "\e92e";
+       }
+   } */
+   .icon-address-book {
+       &:before {
+           content: "\e944";
+       }
+   }
+     .icon-display {
+        &:before {
+            content: "\e956";
+        }
+    }
+    .icon-bubble {
+        &:before {
+            content: "\e96b";
+        }
+    }
+    .icon-users {
+        &:before {
+            content: "\e972";
+        }
+    }
+    /* .icon-user-plus {
+        &:before {
+            content: "\e973";
+        }
+    }  */
+   /*  .icon-search {
+       &:before {
+           content: "\e986";
+       }
+   }
+   .icon-leaf {
+       &:before {
+           content: "\e9a4";
+       }
+   }
+   .icon-download2 {
+       &:before {
+           content: "\e9c5";
+       }
+   }
+   .icon-upload2 {
+       &:before {
+           content: "\e9c6";
+       }
+   }
+   .icon-link {
+       &:before {
+           content: "\e9cb";
+       }
+   }
+   .icon-plus {
+       &:before {
+           content: "\ea0a";
+       }
+   }*/
+   .icon-cross {
+       &:before {
+           content: "\ea0f";
+       }
+   }
+  /*  .icon-github2 {
+      &:before {
+          content: "\eab2";
+      }     
+  } */
+}

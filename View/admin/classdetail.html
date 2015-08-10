@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>后台管理</title>
+    <link rel="stylesheet" href="../../Public/css/admin/admin.css">
+    <script type="text/javascript" src="../../Public/js/jquery.1.4.2-min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="../../Public/images/logos.png" alt="Logo" width="120px" heigth="70px"></div>
+        <div class="user">
+            <a href="#" id="user">
+                admin <b></b>
+            </a>
+            <ul>
+                <li>
+                    <a href="#" id="ad-mod-pwd">修改密码</a>
+                </li>
+                <li>
+                    <a href="#" id="log-out">退出登录</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content clearfix">
+        <div class="main">
+            <div class="main-wrap" id="mainWrap">
+                <div class="main">
+                    <div class="title">
+                        <span>工作室详情</span>
+                    </div>
+                    <table class="tableDetail">
+                        <tr>
+                            <th>工作室名称</th>
+                            <th>parabola</th>
+                        </tr>
+                        <tr>
+                            <td>上传文件</td>
+                            <td>
+                                <a href="#">message.zip_oldname</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>成立时间</td>
+                            <td>2006</td>
+                        </tr>
+                        <tr>
+                            <td>指导教师</td>
+                            <td>李锡祚</td>
+                        </tr>
+                        <tr>
+                            <td>学习方向</td>
+                            <td>Web</td>
+                        </tr>
+                        <tr>
+                            <td>工作室地点</td>
+                            <td>F214</td>
+                        </tr>
+                        <tr>
+                            <td>负责人</td>
+                            <td>wang</td>
+                        </tr>
+                        <tr>
+                            <td>现有成员</td>
+                            <td>那丽雪 李某某 岁某某</td>
+                        </tr>
+                        <tr>
+                            <td>手机号码</td>
+                            <td>15166666666</td>
+                        </tr>
+                        <tr>
+                            <td>qq号码</td>
+                            <td>55555</td>
+                        </tr>
+                        <tr>
+                            <td>审核</td>
+                            <td>
+                                <a href="#" id="yes">审核通过</a>
+                                <a href="#" id="no">审核未通过</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="aside" id="aside">
+            <ul>
+                <li class="menu">菜单</li>
+                <li class="list">
+                    <a href="index.html"> <i class="icon icon-home3"></i>
+                        后台首页
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="audit.html"> <i class="icon icon-profile"></i>
+                        工作室审核
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="class.html">
+                        <i class="icon icon-users"></i>
+                        班级管理
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="user.html">
+                        <i class="icon icon-address-book"></i>
+                        账号管理
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="notice.html">
+                        <i class="icon icon-bubble"></i>
+                        公告管理
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="feedback.html">
+                        <i class="icon icon-display"></i>
+                        查看反馈
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pop-level" id="show-ad-pwd">
+        <form action="" method="post" name="modpsdFrm">
+            <div class="pop-tit">
+                修改密码
+                <a href="#" class="icon icon-cross"></a>
+            </div>
+            <input type="password" name="user-pw1" id="user-pw1" placeholder="密码">
+            <input type="password" name="user-pw2" id="user-pw2" placeholder="确认密码">
+            <button class="sure" id="modpsdFrm">确认</button>
+        </form>
+    </div>
+    <div class="pop-level" id="show-lg-out">
+        <form action="" method="post" name="logout">
+            <div class="pop-tit">
+                确认退出？
+                <a href="#" class="icon icon-cross"></a>
+            </div>
+            <button class="sure">确认</button>
+            <button class="cancle">取消</button>
+        </form>
+    </div>
+    <script type="text/javascript" src="../../Public/js/util.js"></script>
+    <script type="text/javascript" src="../../Public/js/main.js"></script>
+    <script>
+        var work = new Workroom();
+    </script>
+</body>
+</html>

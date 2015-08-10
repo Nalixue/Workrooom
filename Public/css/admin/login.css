@@ -1,0 +1,25 @@
+*{margin:0;padding:0}
+body{font-family:"Microsoft YaHei"}
+img,button,input{border:none}
+button{cursor:pointer}
+a{text-decoration:none}
+ul li{list-style:none}
+::selection{color:#fff;background:#47bea0}
+@font-face{font-family:'icomoon';src:url('../../fonts/icomoon.eot?wkmwtl');src:url('../../fonts/icomoon.eot?#iefixwkmwtl') format('embedded-opentype'),url('../../fonts/icomoon.woff?wkmwtl') format('woff'),url('../../fonts/icomoon.ttf?wkmwtl') format('truetype'),url('../../fonts/icomoon.svg?wkmwtl#icomoon') format('svg');font-weight:normal;font-style:normal}.icon{font-family:'icomoon';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.icon-home3:before{content:"\e902"}
+.icon-newspaper:before{content:"\e904"}
+.icon-profile:before{content:"\e923"}
+.icon-address-book:before{content:"\e944"}
+.icon-display:before{content:"\e956"}
+.icon-bubble:before{content:"\e96b"}
+.icon-users:before{content:"\e972"}
+.icon-search:before{content:"\e986"}
+.icon-leaf:before{content:"\e9a4"}
+.icon-cross:before{content:"\ea0f"}
+i{float:rigth;display:inline;margin-right:8px}
+body{background-color:#7191a8;color:#fff}
+.login{width:350px;height:476px;position:absolute;top:50%;left:50%;margin-left:-175px;margin-top:-238px;text-align:center}.login img{width:170px;height:44px;margin-left:70px;cursor:pointer}
+.lg_input{width:350px;font-size:12px;margin:20px auto 10px auto;padding:60px 0 20px 0;background-color:#fff}.lg_input p{width:260px;height:50px;line-height:50px;margin:0 auto 25px auto;color:#747474}
+.lg_input input{width:200px;height:35px;padding-left:5px;background-color:#f9ffbd;outline:1px solid #e5e8ce}
+.lg_input button{width:100px;height:40px;font-size:10px;float:right;display:inline;margin:10px 30px auto auto;background-color:#7191a8;color:#fff;cursor:pointer}
+.wrong{font-size:12px;color:#e8614b}

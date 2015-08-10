@@ -1,0 +1,51 @@
+@import "global";
+@charset "utf-8";
+
+.reset();
+.font();
+i {
+	.fl(@p: rigth);
+	margin-right: 8px;
+}
+.login{
+	.pos-middle(350px, 476px);
+	text-align: center;
+	img {
+		.box-size(170px, 44px);
+	    margin-left: 70px;
+	    cursor: pointer;
+	}
+	p span {
+		.font-s10();
+	    color: #F74043;
+	}
+}
+.lg_input{
+	.box-wid(350px);
+	.font-s12();
+	margin: 20px auto 10px auto;
+	padding: 60px 0 20px 0;
+	background-color: @c-font;
+	p {
+		.box-wid(300px);
+		.font-middle(50px);
+		margin: 0 auto 25px auto;
+		color: #747474;
+	}
+	input {
+		.box-size(200px, 35px);
+		padding-left: 5px;
+		background-color: #F9FFBD;
+		outline: 1px solid #E5E8CE;
+	}
+	button {
+		.box-size(100px, 40px);
+		.font-s10();
+		.fl(@p: right);
+		margin: 10px 8px auto auto;
+		background-color: #7191A8;
+		color: @c-font;
+		cursor: pointer;
+	}
+}
+

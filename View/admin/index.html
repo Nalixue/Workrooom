@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>后台管理</title>
+    <link rel="stylesheet" href="../../Public/css/admin/admin.css">
+    <script type="text/javascript" src="../../Public/js/jquery.1.4.2-min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="../../Public/images/logos.png" alt="Logo" width="120px" heigth="70px"></div>
+        <div class="user">
+            <a href="" id="user">
+                admin <b></b>
+            </a>
+            <ul>
+                <li>
+                    <a href="#" id="ad-mod-pwd" class="pop-cancle">修改密码</a>
+                </li>
+                <li>
+                    <a href="#" id="log-out">退出登录</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content clearfix">
+        <div class="main">
+            <div class="main-wrap" id="mainWrap">
+                <div class="title">
+                    <span>后台首页</span>
+                </div>
+                <fieldset>
+                    <legend>系统介绍</legend>
+                    <p>
+                        本系统由大连民族大学李锡祚工作室开发，主要使用HTML+CSS+Javascript+PHP+Mysql技术。
+                        通过本系统可方便了解计算机科学与工程学院的工作室情况。
+                        部分文字省略。。。。
+                    </p>
+                </fieldset>
+            </div>
+        </div>
+        <div class="aside" id="aside">
+            <ul>
+                <li class="menu">菜单</li>
+                <li class="list">
+                    <a href="index.html"> 
+                        <i class="icon icon-home3"></i>
+                        后台首页
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="audit.html"> 
+                        <i class="icon icon-profile"></i>
+                        工作室审核
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="class.html">
+                        <i class="icon icon-users"></i>
+                        班级管理
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="user.html">
+                        <i class="icon icon-address-book"></i>
+                        账号管理
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="notice.html">
+                        <i class="icon icon-bubble"></i>
+                        公告管理
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="feedback.html">
+                        <i class="icon icon-display"></i>
+                        查看反馈
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pop-level" id="show-ad-pwd">
+        <form action="" method="post" name="modpsdFrm">
+            <div class="pop-tit">
+                修改密码
+                <a href="#" class="icon icon-cross"></a>
+            </div>
+            <input type="password" name="user-pw1" id="user-pw1" placeholder="密码">
+            <input type="password" name="user-pw2" id="user-pw2" placeholder="确认密码">
+            <button class="sure" id="modpsdFrm">确认</button>
+        </form>
+    </div>
+    <div class="pop-level" id="show-lg-out">
+        <form action="" method="post" name="logout">
+            <div class="pop-tit">
+                确认退出？
+                <a href="#" class="icon icon-cross"></a>
+            </div>
+            <button class="sure">确认</button>
+            <button class="cancle">取消</button>
+        </form>
+    </div>
+    <script type="text/javascript" src="../../Public/js/main.js"></script>
+    <script type="text/javascript" src="../../Public/js/util.js"></script>
+    <script>
+        var work = new Workroom();
+    </script>
+</body>
+</html>
