@@ -34,7 +34,7 @@ Workroom.prototype = {
     setStyle: function() {
         $('#aside a').map(function() {
 
-            if($('.title span').html() === $(this).text().trim()) {
+            if($('.title span').html() === $.trim($(this).text()) {
                 $(this).css('color', '#47bea0');
             }
         });
